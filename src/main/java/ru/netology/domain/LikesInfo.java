@@ -2,8 +2,9 @@ package ru.netology.domain;
 
 public class LikesInfo {
     private int count;
-    private boolean userLikes;
-    private boolean toLike;
+    private int userLikes;
+    private int canLike;
+    private int canPublish;
 
     public int getCount() {
         return count;
@@ -13,19 +14,27 @@ public class LikesInfo {
         this.count = count;
     }
 
-    public boolean getUserLikes() {
+    public int getUserLikes() {
         return userLikes;
     }
 
-    public void setUserLikes(Boolean userLikes) {
+    public void setUserLikes(int userLikes) {
         this.userLikes = userLikes;
     }
 
-    public boolean getToLike() {
-        return toLike;
+    public int getCanLike() {
+        return canLike;
     }
 
-    public void setToLike(Boolean toLike) {
-        this.toLike = toLike;
+    public void setCanLike(int canLike) {
+        this.canLike = canLike;
+    }
+
+    public int getCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(int canPublish) {
+        this.canPublish = canPublish;
     }
 }
